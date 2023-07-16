@@ -1,0 +1,132 @@
+body {
+    /*background-image: url(./images/Manicure1.jpg);
+    background-size: 100%;
+    background-position: center;*/
+
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 1.2rem;
+}
+
+.logotext {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.logo {
+    max-width: 200px;
+}
+  
+@media (max-width: 768px) {
+    .logo {
+      max-width: 150px;
+    }
+}
+  
+.navbar {
+    background-color: #f8f9fa;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+}
+
+.nav-item :hover {
+    background-color: rgba(17, 17, 17, 0.5);
+    color:rgb(250, 235, 215);
+    border-radius: 4px;
+    padding-left: 5px;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+a {
+    text-decoration-line: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn-custom {
+    width: fit-content;
+    align-self: center;
+    display: block; margin: 0 auto;
+}
+
+.mainPage {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceBtn {
+    font-size: 2rem;
+}
+
+.serviceBtn:active, .serviceBtn:focus {
+    color:cornflowerblue;
+}
+
+
+.borderWrap {
+    border: 2px solid black;
+    padding: 4rem
+}
+
+.carousel-container {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 80%;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.carousel-images img {
+    width: 10%;
+    height: calc((100% / 3) * 4);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-images img.active {
+    width: 60%;
+}
+
+.carousel-images img:not(.active):hover {
+    transform: scale(1.05);
+}
+
+.carousel-images img:not(.active) {
+    filter: blur(3px)
+
+  }
+  
+.gallery-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}  
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap:30px
+}
+
+.gallery img {
+    width:100%;
+}
+  
